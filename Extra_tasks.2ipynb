@@ -1,0 +1,138 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNnBe9sVjfb/zJOHfuQPeSn",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/German121/university/blob/main/Extra_tasks.2ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 14,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wczCj4KqXBQ9",
+        "outputId": "d66f4514-b2d0-429a-af9b-d7a5fbc2ef66"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "\n",
+            "  1. Добавить контакт\n",
+            "  2. Удалить контакт (имя)\n",
+            "  3. Просмотреть телефонную книгу\n",
+            "  4. Изменить номер телефона (имя)\n",
+            "  5. Завершить программу\n",
+            "  1\n",
+            "Введите номер: 1234567890\n",
+            "Введите имя: qwerty\n",
+            "\n",
+            "  1. Добавить контакт\n",
+            "  2. Удалить контакт (имя)\n",
+            "  3. Просмотреть телефонную книгу\n",
+            "  4. Изменить номер телефона (имя)\n",
+            "  5. Завершить программу\n",
+            "  4\n",
+            "Введите номер: 1111111111\n",
+            "Введите имя: qwerty\n",
+            "\n",
+            "  1. Добавить контакт\n",
+            "  2. Удалить контакт (имя)\n",
+            "  3. Просмотреть телефонную книгу\n",
+            "  4. Изменить номер телефона (имя)\n",
+            "  5. Завершить программу\n",
+            "  3\n",
+            "qwerty: +71111111111\n",
+            "\n",
+            "  1. Добавить контакт\n",
+            "  2. Удалить контакт (имя)\n",
+            "  3. Просмотреть телефонную книгу\n",
+            "  4. Изменить номер телефона (имя)\n",
+            "  5. Завершить программу\n",
+            "  2\n",
+            "Введите имя: qwerty\n",
+            "\n",
+            "  1. Добавить контакт\n",
+            "  2. Удалить контакт (имя)\n",
+            "  3. Просмотреть телефонную книгу\n",
+            "  4. Изменить номер телефона (имя)\n",
+            "  5. Завершить программу\n",
+            "  3\n",
+            "\n",
+            "  1. Добавить контакт\n",
+            "  2. Удалить контакт (имя)\n",
+            "  3. Просмотреть телефонную книгу\n",
+            "  4. Изменить номер телефона (имя)\n",
+            "  5. Завершить программу\n",
+            "  5\n"
+          ]
+        }
+      ],
+      "source": [
+        "def EN(name):\n",
+        "  a = name.split()\n",
+        "  a[0], a[1] = a[0].lower().capitalize(), a[1].lower().capitalize()\n",
+        "  return ' '.join(a)\n",
+        "def eNum(num):\n",
+        "  if '-' in num:\n",
+        "    b = num.split('-')\n",
+        "    num = ''.join(b)\n",
+        "  return f'+7{num[-10:]}'\n",
+        "def aCn():\n",
+        "  numbook[eNum(input('Введите имя: '))[2:]] = eNum(input('Введите номер: '))\n",
+        "def dCn():\n",
+        "  del numbook[eNum(input('Введите имя: '))[2:]]\n",
+        "def book():\n",
+        "  for p, k in numbook.items():\n",
+        "    print(f'{p}: {k}')\n",
+        "def NNN():\n",
+        "  numbook[eNum(input('Введите имя: '))[2:]] = eNum(input('Введите номер: '))\n",
+        "\n",
+        "\n",
+        "numbook = {}\n",
+        "while True:\n",
+        "  x = input(\"\"\"\n",
+        "  1. Добавить контакт\n",
+        "  2. Удалить контакт (имя)\n",
+        "  3. Просмотреть телефонную книгу\n",
+        "  4. Изменить номер телефона (имя)\n",
+        "  5. Завершить программу\n",
+        "  \"\"\")\n",
+        "  if x == '1':\n",
+        "    aCn()\n",
+        "  elif x == '2':\n",
+        "    dCn()\n",
+        "  elif x == '3':\n",
+        "    book()\n",
+        "  elif x == '4':\n",
+        "    NNN()\n",
+        "  elif x == '5':\n",
+        "    break"
+      ]
+    }
+  ]
+}
