@@ -1,6 +1,7 @@
 import random
 
 
+
 def monty_hall(n):
     win1 = 0
     win2 = 0
