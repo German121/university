@@ -9,11 +9,11 @@ def game():
                       '\n средний - введите "2"'
                       '\n лёгкий - введите "1"\n')
     if difficult.strip() == '3':
-        skill = 3
+        skill = 2
     elif difficult.strip() == '2':
-        skill = 5
+        skill = 3
     elif difficult.strip() == '1':
-        skill = 7
+        skill = 5
     while True:
         word = word_list.pop(random.randrange(len(word_list)))
         zagadano = ["■"] * len(word)
