@@ -5,9 +5,9 @@ def game():
     word_list = gen.get_words()
     record = 0
     skill = 0
-    difficult = input('Уровень сложности:\n Сложный - введите "3"'
-                      '\n средний - введите "2"'
-                      '\n лёгкий - введите "1"\n')
+    difficult = input('Уровень сложности:\n Сложный (2 жизни) - введите "3"'
+                      '\n средний (3 жизни) - введите "2"'
+                      '\n лёгкий (5 жизней) - введите "1"\n')
     if difficult.strip() == '3':
         skill = 2
     elif difficult.strip() == '2':
