@@ -1,23 +1,23 @@
 def inf(file):
     with open(file, mode='r', encoding='utf-8') as text:
-        strings = text.read().splitlines()
-    split_strings = [x.split('|') for x in strings]
-    return split_strings
+        st = text.read().splitlines()
+    spst = [x.split('|') for x in st]
+    return spst
 
 
-def get_books(word, split_strings):
-    search_list = []
-    for string in split_strings:
-        if word in string[1]:
-            search_list.append(string)
-    return search_list
+def books(word, spst):
+    slist = []
+    for st in spst:
+        if word in st[1]:
+            slist.append(st)
+    return slist
 
 
-def get_total(list):
-    number_price_of_search_list = []
-    for element in list:
-        if (int(element[3]) * float(element[4])) < 500:
-            number_price_of_search_list.append((element[0], int(element[3]) * float(element[4]) + float(100)))
+def total(list):
+    numlist = []
+    for el in list:
+        if (int(el[3]) * float(el[4])) < 500:
+            numlist.append((el[0], int(el[3]) * float(el[4]) + float(100)))
         else:
-            number_price_of_search_list.append((element[0], int(element[3]) * float(element[4])))
-    return number_price_of_search_list
+            numlist.append((el[0], int(el[3]) * float(el[4])))
+    return numlist

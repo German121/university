@@ -7,33 +7,33 @@ import csv
 
 def get_words():
     f = open('input.txt', mode="r", encoding="utf8")
-    strings = f.read().splitlines()
+    st = f.read().splitlines()
     f.close()
-    strings_list = [strings[i].split(' ') for i in range(len(strings))]
-    clear_strings_list = []
-    for i in range(len(strings_list)):
-        for word in strings_list[i]:
+    stlist = [st[i].split(' ') for i in range(len(st))]
+    clear_list = []
+    for i in range(len(stlist)):
+        for word in stlist[i]:
             word = ''.join(filter(str.isalpha, word)).lower()
             if len(word) > 0:
-                clear_strings_list.append(word)
-    return clear_strings_list
+                clear_list.append(word)
+    return clear_list
 
 
-def normal_words(clear_strings_list):
-    normal_list = []
-    for word in clear_strings_list:
+def normal(clear_list):
+    imenit = []
+    for word in clear_list:
         morph = pymorphy3.MorphAnalyzer()
-        normal_list.append(morph.parse(word)[0].normal_form)
-    return normal_list
+        imenit.append(morph.parse(word)[0].normal_form)
+    return imenit
 
 
-def count_words(normal_list):
+def count(imenit):
     d = {}
-    for i in range(len(normal_list)):
-        if not normal_list[i] in d:
-            d[normal_list[i]] = 1
+    for i in range(len(imenit)):
+        if not imenit[i] in d:
+            d[imenit[i]] = 1
         else:
-            d[normal_list[i]] += 1
+            d[imenit[i]] += 1
     return d
 
 

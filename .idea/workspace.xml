@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70f9e6b8-05dd-4d4c-b45b-426e19b60121" name="Changes" comment="practice">
-      <change afterPath="$PROJECT_DIR$/Extra_tasks/dop 4/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extra_tasks/dop 4/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extra_tasks/dop 4/dara.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Extra_tasks/dop 4/service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 7/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 7/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 7/infa.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 7/info.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 7/viewer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 8/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 8/__main__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 8/dictionary.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 8/english_learn.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 8/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Practice/Practice 8/viewer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/Practice 3/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/Practice 3/game.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/Practice 4/count.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/Practice 4/count.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/Practice 5/Chisla.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/Practice 5/Chisla.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practice/Practice 6/infa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/Practice 6/infa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice/Practice 7/infa.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/Practice 7/infa.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practice/Practice 7/viewer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Practice/Practice 7/viewer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +60,7 @@
   }
 }</component>
   <component name="RunManager" selected="Python.viewer">
-    <configuration name="__main__ (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="__main__ (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="university" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -86,11 +68,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Practice/Practice 5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Extra_tasks/dop 4" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Practice/Practice 5/__main__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Extra_tasks/dop 4/__main__.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -207,10 +189,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.viewer" />
-        <item itemvalue="Python.__main__ (5)" />
         <item itemvalue="Python.__main__" />
+        <item itemvalue="Python.__main__ (5)" />
+        <item itemvalue="Python.__main__ (1)" />
         <item itemvalue="Python.__main__ (4)" />
-        <item itemvalue="Python.__main__ (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -295,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700735514463</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="practice">
+      <option name="closed" value="true" />
+      <created>1701366214828</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1701366214829</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -306,5 +296,16 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;Practice/Practice 3/records.txt" />
     <MESSAGE value="practice" />
     <option name="LAST_COMMIT_MESSAGE" value="practice" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

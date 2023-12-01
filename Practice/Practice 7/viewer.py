@@ -3,13 +3,13 @@ from infa import *
 
 def show():
     try:
-        split_strings = (inf('info.csv'))
+        spst = (inf('info.csv'))
         name = input('Введите строку, с которой хотите книгу: ').strip()
-        list = get_books(name, split_strings)
-        out = (get_total(list))
-        if len(out) == 0:
+        list = books(name, spst)
+        sss = (total(list))
+        if len(sss) == 0:
             print('Таких книг нет')
         else:
-            print(out)
+            print(sss)
     except:
-        print('какая-то ошибка')
+        print('Ошибка')
